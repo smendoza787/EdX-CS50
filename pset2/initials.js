@@ -8,4 +8,4 @@ function initialsPlease(first, middle, last) {
   return letter1 + letter2 + letter3;
 }
 
-console.log( initialsPlease( "Patrick", "Pink", "Star
+console.log( initialsPlease( "Patrick", "Pink", "Star" ) );
