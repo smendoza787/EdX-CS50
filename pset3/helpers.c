@@ -7,6 +7,9 @@
 #include <cs50.h>
 #include "helpers.h"
 
+bool binary_search(int value, int values[], int n);
+void selection_sort(int values[], int n);
+
 /**
  * Returns true if value is in array of n values, else false.
  */
@@ -26,7 +29,7 @@ bool search(int value, int values[], int n)
 void sort(int values[], int n)
 {
     // TODO: implement an O(n^2) sorting algorithm
-    return selection_sort(values, n);
+     selection_sort(values, n);
 }
 
 bool binary_search(int value, int values[], int n)
@@ -40,7 +43,7 @@ bool binary_search(int value, int values[], int n)
 
         if (values[middle] == value)
         {
-            return true
+            return true;
         }
         else if (values[middle] > value)
         {
@@ -56,7 +59,7 @@ bool binary_search(int value, int values[], int n)
 }
 
 
-int selection_sort(int values[], int n)
+void selection_sort(int values[], int n)
 {
   int temp;
 
